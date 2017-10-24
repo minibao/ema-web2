@@ -1,0 +1,137 @@
+{{#section "head"}}
+    <link rel='stylesheet' href='{{@static_url}}/styles/yinling/info.css'/>
+{{/section}}
+
+{{#section "foot"}}
+    <script src="{{@static_url}}/scripts/yinling/info.js"></script>
+{{/section}}
+
+<div class="frm">
+    <div class="frm-bg-mask"></div>
+    <p class="name-wzbt">王者霸土</p>
+
+    <div class="basic-info">
+        <img class="select-server-btn" src="{{@static_url}}/images/yinling-all/info/select-server.png" alt="">
+        <div>
+            <img class="basic-info-bg" src="{{@static_url}}/images/yinling-all/info/basic-info-bg.png" alt="">
+            <div class="basic-box">
+                <div class="top">
+                    <div class="top-div">
+                        <img class="basic-box-img" src="{{@static_url}}/images/yinling-all/info/head-box.png" alt="">
+                        <div>
+                            <img class="basic-head-img" src="" alt="">
+                        </div>
+
+                    </div>
+                    <div class="top-right">
+                        <span style="font-size: 15px;font-weight: 500;">\{{ylInfo.username}}</span>
+                        <div class="progress-bar">
+                            <div class="progress-bar-per">
+                            </div>
+                            <div class="progress-bar-per-num">
+                                <span style="margin-left: 15px;">Lv:\{{ylInfo.lv}}</span><span
+                                    style="margin-left: 20px;">5000/8000</span>
+                            </div>
+                        </div>
+                        <div>
+                            <!--<span style="color:#fff4be;font-size: 13px;">公会:天上天下</span>-->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="down">
+                    <img class="fl-left" style="z-index: 3"
+                         src="{{@static_url}}/images/yinling-all/info/changyonghero.png" alt="">
+                    <img class="fl-left" style="z-index: 2"
+                         src="{{@static_url}}/images/yinling-all/info/tiantidengji.png" alt="">
+                    <img class="fl-left" style="z-index: 1"
+                         src="{{@static_url}}/images/yinling-all/info/jinjichang.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center-three-head">
+        <img class="" style="z-index: 1"
+             src="{{@static_url}}/imgs_static/yinling-all/info/hero-img/\{{ylInfo.userCommonHeroes[0].heroid}}.png"
+             alt="">
+        <img class="" style="z-index: 2"
+             src="{{@static_url}}/imgs_static/yinling-all/info/hero-img/\{{ylInfo.userCommonHeroes[1].heroid}}.png"
+             alt="">
+        <img class="" style="z-index: 3"
+             src="{{@static_url}}/imgs_static/yinling-all/info/hero-img/\{{ylInfo.userCommonHeroes[2].heroid}}.png"
+             alt="">
+    </div>
+    <div class="hero-detail-bar">
+        <img src="{{@static_url}}/images/yinling-all/info/hero-detail-bar.png" alt="">
+    </div>
+    <div class="hero-detail-box">
+        <div class="topbar">
+            <div>
+                <div style="width: 26.5%">英雄名称</div>
+                <div style="width: 29%">好感度</div>
+                <div style="width: 20%;text-indent: 4%;">胜率</div>
+                <div style="width: 24.5%;text-indent: 5%;">详细</div>
+            </div>
+        </div>
+        <div class="heros-detail">
+            <div v-for="item in ylInfo.userFavor" class="details">
+                <div>
+                    <img class="detail-bg" src="{{@static_url}}/images/yinling-all/info/detial-bg.png" alt="">
+                    <div class="cont">
+                        <div class="hero-img">
+                            <img class="hero-img-fang" src="{{@static_url}}/imgs_static/yinling-all/info/hero-img-fang/\{{item.heroid}}.png" alt="">
+                        </div>
+                        <div class="favorability">
+                            <div class="fav-progress-bar">
+                                <div v-if="item.lv==0" style="width: 0%;"></div>
+                                <div v-else style="width: \{{(item.lv/10* 100).toFixed(2)}}%;"></div>
+                            </div>
+                            <div class="current-fav">当前好感度等级：\{{item.lv}}</div>
+                        </div>
+                        <div class="win">
+                            <p v-if="item.stairwin==0">0%</p>
+                            <p v-else>\{{(item.stairwin/item.usecount* 100).toFixed(2)}}%</p>
+                        </div>
+                        <div class="detail"><p class="detail-cl" lasttime="\{{item.lasttime}}">详细</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--选择区服-->
+<div class="sendlottery ">
+    <div id="gainingmask" style="display: block;" class="gainingmask bounceInUp">
+        <div class="gbox">
+            <div class="g-word">
+                <div class="selectbox">
+                    <p style="font-size: 15px;">请选择您的区服以及角色</p>
+                    <div style="margin-top: 30px;" class="weui-cell weui-cell_select weui-cell_select-after">
+                        <div class="weui-cell__hd">
+                            <label for="" class="weui-label">游戏区服</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <select-server></select-server>
+                        </div>
+                    </div>
+                    <div class="weui-cell weui-cell_select weui-cell_select-after">
+                        <div class="weui-cell__hd">
+                            <label for="" class="weui-label">游戏角色</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <select id="select-role" class="weui-select" name="select2">
+                                <option value="0">请选择角色</option>
+                                <option roleid="\{{item.uid}}" value="\{{item.uid}}"
+                                        v-for="item of inforole">\{{item.username}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gbtn">确定</div>
+            <div class="gbtn1">取消</div>
+        </div>
+    </div>
+</div>

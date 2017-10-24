@@ -1,0 +1,446 @@
+.frm {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #072e29;
+  width: 100%;
+  min-height: 100%;
+  color: #fff;
+  font-size: 14px;
+}
+.frm .frm-bg-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-radial-gradient(rgba(255, 255, 255, 0.2) 5%, rgba(255, 255, 255, 0) 60%);
+  /* Safari 5.1 - 6.0 */
+  background: -o-radial-gradient(rgba(255, 255, 255, 0.2) 5%, rgba(255, 255, 255, 0) 60%);
+  /* Opera 11.6 - 12.0 */
+  background: -moz-radial-gradient(rgba(255, 255, 255, 0.2) 5%, rgba(255, 255, 255, 0) 60%);
+  /* Firefox 3.6 - 15 */
+  background: radial-gradient(rgba(255, 255, 255, 0.2) 5%, rgba(255, 255, 255, 0) 60%);
+}
+.frm .name-wzbt {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.frm .basic-info {
+  width: 100%;
+  position: relative;
+  padding: 0 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frm .basic-info .select-server-btn {
+  width: 29%;
+  position: absolute;
+  margin-top: -6%;
+}
+.frm .basic-info > div {
+  position: relative;
+  width: 100%;
+}
+.frm .basic-info .basic-info-bg {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+.frm .basic-info .basic-box {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+}
+.frm .basic-info .basic-box .top {
+  position: relative;
+}
+.frm .basic-info .basic-box .top .top-div {
+  width: 55px;
+  height: 55px;
+  top: 17px;
+  left: 20px;
+  position: absolute;
+  overflow: hidden;
+}
+.frm .basic-info .basic-box .top .top-div .basic-box-img {
+  position: absolute;
+  width: 100%;
+}
+.frm .basic-info .basic-box .top .top-div div {
+  position: absolute;
+  padding: 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frm .basic-info .basic-box .top .top-div div img {
+  width: 100%;
+}
+.frm .basic-info .basic-box .top .top-right {
+  position: absolute;
+  left: 100px;
+  top: 17px;
+}
+.frm .basic-info .basic-box .top .top-right .progress-bar {
+  position: relative;
+  width: 200px;
+  background: #101010;
+  height: 14px;
+  border: 1px solid #fff4be;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 2px 0;
+}
+.frm .basic-info .basic-box .top .top-right .progress-bar .progress-bar-per {
+  height: 100%;
+  width: 50%;
+  background: #256e13;
+  border-radius: 20px;
+  margin: 0 1px;
+}
+.frm .basic-info .basic-box .top .top-right .progress-bar .progress-bar-per-num {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-size: 13px;
+  top: 0;
+  line-height: 14px;
+}
+.frm .basic-info .basic-box .down {
+  width: 100%;
+  height: 40px;
+  bottom: -5px;
+  position: absolute;
+}
+.frm .basic-info .basic-box .down .fl-left {
+  width: 29%;
+  float: left;
+  position: relative;
+}
+.frm .basic-info .basic-box .down :nth-child(2),
+.frm .basic-info .basic-box .down :nth-child(3) {
+  margin-left: -8%;
+}
+.frm .center-three-head {
+  text-align: center;
+}
+.frm .center-three-head img {
+  margin: 0 -10px;
+  width: 32%;
+  position: relative;
+}
+.frm .hero-detail-bar {
+  width: 100%;
+  padding: 0 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frm .hero-detail-bar img {
+  width: 100%;
+}
+.frm .hero-detail-box {
+  width: 100%;
+  padding: 0 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frm .hero-detail-box .topbar {
+  padding: 8px 8px;
+  background: #0a413a;
+}
+.frm .hero-detail-box .topbar > div {
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  padding: 5px 0;
+}
+.frm .hero-detail-box .topbar > div div {
+  float: left;
+  text-align: center;
+  color: #fff4be;
+  font-size: 15px;
+}
+.frm .hero-detail-box .heros-detail {
+  width: 100%;
+  padding: 8px;
+  background: #0a413a;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 80px;
+}
+.frm .hero-detail-box .heros-detail .details {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.frm .hero-detail-box .heros-detail .details > div {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frm .hero-detail-box .heros-detail .details > div .detail-bg {
+  width: 100%;
+  display: block;
+}
+.frm .hero-detail-box .heros-detail .details > div .cont {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.74);
+}
+.frm .hero-detail-box .heros-detail .details > div .cont .hero-img {
+  height: 100%;
+  width: 26.5%;
+  float: left;
+}
+.frm .hero-detail-box .heros-detail .details > div .cont .hero-img .hero-img-fang {
+  height: 100%;
+  padding-bottom: 5px;
+}
+.frm .hero-detail-box .heros-detail .details > div .cont .favorability {
+  height: 100%;
+  width: 28%;
+  float: left;
+}
+.frm .hero-detail-box .heros-detail .details > div .cont .favorability .fav-progress-bar {
+  height: 15px;
+  background: rgba(4, 30, 27, 0.5);
+  top: 50%;
+  margin-top: -10px;
+  position: relative;
+}
+.frm .hero-detail-box .heros-detail .details > div .cont .favorability .fav-progress-bar div {
+  height: 100%;
+  background: #169284;
+}
+.frm .hero-detail-box .heros-detail .details > div .cont .favorability .current-fav {
+  font-size: 10px;
+  position: relative;
+  top: 50%;
+}
+.frm .hero-detail-box .heros-detail .details > div .cont .win {
+  width: 25%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  display: table;
+}
+.frm .hero-detail-box .heros-detail .details > div .cont .win p {
+  display: table-cell;
+  vertical-align: middle;
+}
+.frm .hero-detail-box .heros-detail .details > div .cont .detail {
+  width: 20.5%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  display: table;
+}
+.frm .hero-detail-box .heros-detail .details > div .cont .detail p {
+  display: table-cell;
+  vertical-align: middle;
+}
+.sendlottery {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.3);
+}
+.sendlottery .gainingmask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+.sendlottery .gainingmask .gbox {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  margin-left: -125px;
+  top: 50%;
+  margin-top: -150px;
+  background: #0b6156;
+  text-align: center;
+}
+.sendlottery .gainingmask .gbox .g-word {
+  color: #fff;
+  padding: 10% 2%;
+  font-weight: 500;
+}
+.sendlottery .gainingmask .gbox .g-word .weui-cell__bd {
+  border: 1px solid #fff;
+  margin: 10px;
+  color: #fff;
+}
+.sendlottery .gainingmask .gbox .g-word option {
+  color: #0b6156;
+}
+.sendlottery .gainingmask .gbox .g-word .weui-cell__bd:after {
+  z-index: 999;
+  right: 32px;
+  border-color: #fff;
+}
+.sendlottery .gainingmask .gbox .g-word .weui-select {
+  height: 25px;
+  line-height: 25px;
+  padding-left: 10px;
+  color: #fff;
+}
+.sendlottery .gainingmask .gbox .g-word .weui-label {
+  width: auto;
+}
+.sendlottery .gainingmask .gbox .g-word span {
+  color: #fff799;
+  padding: .5em;
+}
+.sendlottery .gainingmask .gbox .gbtn {
+  width: 160px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+  bottom: 70px;
+  line-height: 35px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  background: #1e968c;
+}
+.sendlottery .gainingmask .gbox .gbtn1 {
+  width: 160px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+  bottom: 20px;
+  line-height: 35px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  background: #96321e;
+}
+@-webkit-keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  80% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  80% {
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.bounceInUp {
+  -webkit-animation: bounceInUp 1s ;
+  animation: bounceInUp 1s ;
+}
+@-webkit-keyframes bounceOutDown {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px);
+  }
+}
+@keyframes bounceOutDown {
+  0% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px);
+  }
+}
+.bounceOutDown {
+  -webkit-animation: bounceOutDown 1s ;
+  animation: bounceOutDown 1s ;
+}
+@media screen and (max-width: 360px) {
+  .frm .basic-info .basic-box .down {
+    width: 100%;
+    height: 40px;
+    bottom: -9px;
+    position: absolute;
+  }
+  .frm .hero-detail-box .heros-detail .details > div .cont .favorability .current-fav {
+    font-size: 8px;
+    position: relative;
+    top: 50%;
+  }
+}
